@@ -3,7 +3,11 @@
 ? Intenta crear un comentario
 ================================================================================================================================================== */ 
 
+//Comentario corto.
 
+/* Comentario largo, 
+ * se pueden comentar las líneas que se deseen
+*/
 
 
 
@@ -12,8 +16,14 @@
 ? Declara una variable'myName'
 ================================================================================================================================================== */ 
 
+//1
+var myName;
 
+//2
+let myName;
 
+//3
+const myName = 'valor';
 
 
 /* ==================================================================================================================================================
@@ -21,10 +31,8 @@
 ?   Declara una variable 'a' y debajo asígnale el valor '7'
 ================================================================================================================================================== */ 
 
-
-
-
-
+let A; 
+A = 7;
 
 /* ==================================================================================================================================================
 *   Asigna el valor de una variable a otra variable 
@@ -32,20 +40,16 @@
 ?   Declara una variable 'b' y asígnale el contenido de 'a'
 ================================================================================================================================================== */ 
 
+let aa;
+aa = 7;
 
-
-
-
-
-
+let bb = aa;
 
 /* ==================================================================================================================================================
 *   Inicializa variables con el operador de asignación 
 ?   Define una variable 'a' con 'var' e inicialízala con un valor de '9'
 ================================================================================================================================================== */
-
-
-
+var aaa = 9;
 
 
 /* ==================================================================================================================================================
@@ -56,13 +60,17 @@
 ================================================================================================================================================== */ 
 // Cambia solo el código debajo de esta línea
 
+let d = 5;
+let e = 10;
+let f = 'I am a';
 
+console.log( 'el valor de las variables es: ' + d, e, f); 
 
 // Cambia solo el código encima de esta línea
 
-a = a + 1;
-b = b + 5;
-c = c + " String!";
+d = d + 1;
+e = e + 5;
+f = f + " String!";
 
 
 
@@ -77,12 +85,16 @@ c = c + " String!";
 ================================================================================================================================================== */ 
 // Declaración de variables
 
-
+let studyCapVar;
+let properAMelase;
+let titleCaseOver;
 
 
 // Asignación de variables
 
-
+studyCapVar = 10;
+properAMelase = 'A String';
+titleCaseOver = 9000;
 
 
 
@@ -94,7 +106,10 @@ c = c + " String!";
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
+let suma; 
+suma = 2+8;
 
+console.log('2 + 8 = ' + suma); 
 
 
 
@@ -105,7 +120,10 @@ c = c + " String!";
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
+let difference; 
+difference = 10-2; 
 
+console.log('10 - 2 = ' + difference);
 
 
 
@@ -116,7 +134,10 @@ c = c + " String!";
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
+let product; 
+product = 5*5;
 
+console.log('5 X 5 =' + product);
 
 
 
@@ -127,7 +148,10 @@ c = c + " String!";
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
+let quotient;
+quotient = 48/6;
 
+console.log('48 / 6 = ' + quotient);
 
 
 
@@ -139,7 +163,10 @@ c = c + " String!";
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
+let myVar = 87;
+myVar++;
 
+console.log(myVar);
 
 
 
@@ -152,9 +179,10 @@ c = c + " String!";
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
+let myVarDecrease = 11;
+myVarDecrease--;
 
-
-
+console.log(myVarDecrease);
 
 
 
@@ -163,6 +191,10 @@ c = c + " String!";
 ?   Crea una variable 'myDecimal' y dale un valor decimal con una parte fraccional
 ================================================================================================================================================== */ 
 
+let myDecimal; 
+myDecimal = 5/3; 
+
+console.log(myDecimal);
 
 
 
@@ -173,7 +205,10 @@ c = c + " String!";
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
+let productoDecimal; 
+productoDecimal = 2.21*2.27;
 
+console.log(productoDecimal);
 
 
 
@@ -184,7 +219,10 @@ c = c + " String!";
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
+let quotientDecimal;
+quotientDecimal= 5.5/2.5;
 
+console.log(quotientDecimal);
 
 
 
@@ -195,6 +233,10 @@ c = c + " String!";
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
+let quotientOperation;
+quotientOperation = 50-48;
+
+console.log(quotientOperation);
 
 
 
@@ -204,15 +246,16 @@ c = c + " String!";
 *   Asignación compuesta con adición aumentada
 ?   Convierte las asignaciones de 'a', 'b' y 'c' para que utilicen el operador '+='.
 ?   utiliza console.log() para ver el resultado
-================================================================================================================================================== */ 
+================================================================================================================================================== */  
+
 var a = 3;
 var b = 17;
 var c = 12;
 
 // Cambia solo el código debajo de esta línea
-a = a + 12;
-b = b + 9;
-c = c + 7;
+a += 12;
+b += 9;
+c += 7;
 console.log(a)
 console.log(b)
 console.log(c)
@@ -230,9 +273,9 @@ var b = 9;
 var c = 3;
 
 // Cambia solo el código debajo de esta línea
-a = a - 6;
-b = b - 15;
-c = c - 1;
+a -= 6;
+b -= 15;
+c -= 1;
 console.log(a)
 console.log(b)
 console.log(c)
@@ -250,9 +293,9 @@ var b = 12;
 var c = 4.6;
 
 // Cambia solo el código debajo de esta línea
-a = a * 5;
-b = b * 3;
-c = c * 10;
+a *= 5;
+b *= 3;
+c *= 10;
 console.log(a)
 console.log(b)
 console.log(c)
@@ -270,9 +313,9 @@ var b = 108;
 var c = 33;
 
 // Cambia solo el código debajo de esta línea
-a = a / 12;
-b = b / 4;
-c = c / 11;
+a /= 12;
+b /= 4;
+c /= 11;
 console.log(a)
 console.log(b)
 console.log(c)
@@ -287,8 +330,13 @@ console.log(c)
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
+let myFirstName = String;
+let myLastName = String;
 
+myFirstName = 'Jakeline del Rocio';
+myLastName = 'Sáenz Mogollon'
 
+console.log(myFirstName + myLastName);
 
 
 
@@ -300,7 +348,10 @@ console.log(c)
 ?   I am a "double quoted" string inside "double quotes".
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
-var myStr = ""
+var myStr = ' I am a \ "double quoted" string insede \"double quotes"'
+
+console.log(myStr);
+
 
 
 
@@ -311,8 +362,8 @@ var myStr = ""
 ?   Utiliza comillas simples para rodear tu string para no usar '\'
 ?   <a href="#" target="_blank">Link</a>
 ================================================================================================================================================== */ 
-var myStr = ""
-
+var myStr = ' <a href="#" target="_blank">Link</a> ';
+console.log (myStr);
 
 
 
@@ -322,7 +373,10 @@ var myStr = ""
 ?   usa el operador '+' para concatenar dos strings
 ?   utiliza console.log() para ver el resultado 
 ================================================================================================================================================== */ 
-var myStr = ""
+var myStr = "Hola, estoy realizando una pasantilla"
+var myStr1 = " en Ciancoders."
+
+console.log(myStr + myStr1);
 
 
 
@@ -333,7 +387,10 @@ var myStr = ""
 ?   Construye la cadena anterior en dos líneas uitilizanco "+="
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
+var myStr = "Hola, estoy realizando una pasantilla"
+var myStr1 = " en Ciancoders."
 
+console.log(myStr += myStr1);
 
 
 
@@ -347,7 +404,10 @@ var myStr = ""
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
+let myName = 'Jakeline de Rocio';
+let string1 = 'hola ' + myName + ' Saenz Mogollon';
 
+console.log(string1);
 
 
 
@@ -360,8 +420,6 @@ var myStr = ""
 ?   utiliza console.log() para ver el resultado
 ================================================================================================================================================== */ 
 
-
- 
 
 
 
@@ -405,7 +463,7 @@ var myStr = ""
 ================================================================================================================================================== */ 
 var myStr = "Jello World";
 // Cambia solo el código debajo de esta línea
-
+const myStr = "Jello World";
 
 
 
@@ -456,12 +514,11 @@ var lastLetterOfLastName = ""
 ?   Llama a la función.
 ================================================================================================================================================== */ 
 
+function reusableFunction() {
+  console.log("Hi World");
+}
 
-
-
-  
-
-
+reusableFunction();
 
 
 /* ==================================================================================================================================================
@@ -470,12 +527,13 @@ var lastLetterOfLastName = ""
 ?   Llama a la función con dos números como argumentos.
 ================================================================================================================================================== */ 
 
+function Sumar(num1,num2){
+  
+  var resultado= num1 + num2;
+  console.log(resultado);
+}
 
-
-
-
-
-
+Sumar(8,9);
 
 
 /* ==================================================================================================================================================
@@ -485,10 +543,12 @@ var lastLetterOfLastName = ""
 ================================================================================================================================================== */ 
 // Declara la variable myGlobal debajo de esta línea
 
+var myGlobal;
+myGlobal = 10;
 
 function fun1() {
     // Asigna 5 a oopsGlobal aquí
-    
+    oopsGlobal = 5
 }
 // Cambia solo el código encima de esta línea  
 
@@ -502,8 +562,8 @@ function fun2() {
     }
     console.log(output);
 }
-fun1()
-fun2()
+fun1();
+fun2();
 
 
 
@@ -516,7 +576,8 @@ var outerWear = "T-Shirt";
 
 function myOutfit() {
   // Cambia solo el código debajo de esta línea
-
+  let sobrescribir;
+  sobrescribir = outerWear;
  
   
   // Cambia solo el código encima de esta línea
@@ -524,6 +585,7 @@ function myOutfit() {
 }
 
 myOutfit();
+
 
 
 
@@ -551,7 +613,13 @@ console.log(answer)
 var sum = 0;
 // Cambia solo el código debajo de esta línea
 
+function addFive() {
+  sum = sum + 5;
+  return sum;
+}
 
+addFive();
+console.log(sum);
 
 
 
@@ -574,10 +642,9 @@ function processArg(num) {
 // Cambia solo el código debajo de esta línea
 
 
-
-
-
-
+ processArg(7);
+ processed = processArg(7);
+ console.log(processArg)
 
 /* ==================================================================================================================================================
 *   Permanece en línea
